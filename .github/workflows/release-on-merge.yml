@@ -20,6 +20,7 @@ jobs:
       - name: Create Release
         uses: actions/create-release@v1
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ env.VERSION }}
           release_name: Release ${{ env.VERSION }}
           body: |
