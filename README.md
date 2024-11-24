@@ -1,6 +1,6 @@
 # **Predicción de Diabetes usando Machine Learning**
 
-![Diabetes Prediction Banner](https://storage.googleapis.com/kaggle-datasets-images/3102947/5344155/d4f2d9d63736fff7b6ba10f73774752e/dataset-cover.png?t=2023-04-08-06-42-24)
+![Diabetes Prediction Banner](https://firebasestorage.googleapis.com/v0/b/personalwp-8822c.appspot.com/o/header_diabetes.png?alt=media&token=d977ca99-5b23-4636-b416-09ef426f93b7)
 
 ## Descripción del Proyecto
 
@@ -8,7 +8,7 @@ Este proyecto busca desarrollar un sistema de machine learning que prediga el ri
 
 ## Dataset
 
-El dataset utilizado está disponible en [Kaggle](https://firebasestorage.googleapis.com/v0/b/personalwp-8822c.appspot.com/o/header_diabetes.png?alt=media&token=d977ca99-5b23-4636-b416-09ef426f93b7t). Contiene información médica y demográfica clave de pacientes, como:
+El dataset utilizado está disponible en [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). Contiene información médica y demográfica clave de pacientes, como:
 
 * **Edad**
 * **Género**
