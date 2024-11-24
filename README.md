@@ -8,7 +8,7 @@ Este proyecto busca desarrollar un sistema de machine learning que prediga el ri
 
 ## Dataset
 
-El dataset utilizado está disponible en [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). Contiene información médica y demográfica clave de pacientes, como:
+El dataset utilizado está disponible en [Kaggle](https://firebasestorage.googleapis.com/v0/b/personalwp-8822c.appspot.com/o/header_diabetes.png?alt=media&token=d977ca99-5b23-4636-b416-09ef426f93b7t). Contiene información médica y demográfica clave de pacientes, como:
 
 * **Edad**
 * **Género**
