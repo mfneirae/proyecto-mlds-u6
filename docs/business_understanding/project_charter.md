@@ -125,22 +125,22 @@ El ciclo de vida de TDSP consta de cinco etapas principales que se realizan de m
 
 | Etapa | Actividades | Duración Estimada |
 | --- | --- | --- |
-| | Construir el algoritmo que permita realizar la carga de los datos | |
-| Entendimiento del negocio y carga de datos | Definir el marco del proyecto | Semana 18 - 24 Octubre |
+| Entendimiento del negocio y carga de datos | Construir el algoritmo que permita realizar la carga de los datos | Semana 18 - 24 Noviembre |
+| | Definir el marco del proyecto | |
 | | Crear un diccionario de datos | |
-| | Ejecutar un análisis exploratorio de los datos | |
-| Preprocesamiento, análisis exploratorio | Realizar el preprocesamiento del conjunto de datos | Semana 25 - 1 Noviembre |
+| Preprocesamiento, análisis exploratorio | Ejecutar un análisis exploratorio de los datos | Semana 25 - 1 Noviembre |
+| | Realizar el preprocesamiento del conjunto de datos | |
 | | Definir el conjunto de datos final | |
 | | Generar un reporte con el resumen de los datos | |
-| | Realizar la extracción de características | |
-| Modelamiento y extracción de características | Diseñar los modelos de clasificación | Semana 2 - 8 Diciembre |
+| Modelamiento y extracción de características | Realizar la extracción de características | Semana 2 - 8 Diciembre |
+| | Diseñar los modelos de clasificación | |
 | | Generar un reporte con la línea base de los modelos | |
 | | Seleccionar el modelo final | |
-| | Construir el algoritmo de despliegue | |
-| Despliegue | Generar la documentación de despliegue | Semana 9 - 15 Diciembre |
+| Despliegue | Construir el algoritmo de despliegue | Semana 9 - 15 Diciembre |
+| | Generar la documentación de despliegue | |
 | | Generar la documentación de la infraestructura | |
-| | Construir el algoritmo para la evaluación del modelo | |
-| Evaluación y entrega final | Realizar una interpretación de los resultados | Semana 16 – 22 Diciembre |
+| Evaluación y entrega final | Construir el algoritmo para la evaluación del modelo | Semana 16 – 22 Diciembre |
+| | Realizar una interpretación de los resultados | |
 | | Generar un reporte con las conclusiones del proyecto | |
 
 ## Equipo del Proyecto
