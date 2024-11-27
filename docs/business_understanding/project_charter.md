@@ -56,7 +56,7 @@ Un sistema de predicción de diabetes ofrecerá:
 
 ### Incluye
 
-1. **Variables del Conjunto de Datos**:
+- **Variables del Conjunto de Datos**:
   * **Datos Demográficos**:
     * Edad
     * Género
@@ -71,7 +71,7 @@ Un sistema de predicción de diabetes ofrecerá:
   * **Etiqueta**:
     * Presencia o ausencia de diabetes.
 
-2. **Fases del Proyecto**:
+- **Fases del Proyecto**:
   * **Exploración de Datos**:
     * Análisis exploratorio de los datos
     * Análisis descriptivo de los datos
@@ -92,7 +92,7 @@ Un sistema de predicción de diabetes ofrecerá:
     * Evaluación de resultados
     * Selección del modelo final     
 
-3. **Aplicaciones**:
+- **Aplicaciones**:
   * Identificación temprana del riesgo de desarrollar diabetes en pacientes.
   * Análisis del impacto de factores demográficos y clínicos en el desarrollo de diabetes.
   * Uso como herramienta investigativa para profesionales médicos o educadores.
