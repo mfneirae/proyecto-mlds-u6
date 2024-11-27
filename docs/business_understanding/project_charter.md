@@ -24,8 +24,8 @@ La diabetes es una de las enfermedades crónicas más comunes, la cual afecta a 
 ### Problema
 
 1. **Diagnóstico Tardío:** Frecuente detección en etapas avanzadas.
-2. **Recursos limitados:** Insuficiente personal médico para análisis masivos.
-3. **Fragmentación de datos:** Falta de integración y análisis predictivo efectivo.
+2. **Recursos Limitados:** Insuficiente personal médico para análisis masivos.
+3. **Fragmentación de Datos:** Falta de integración y análisis predictivo efectivo.
 
 ### Oportunidad
 
@@ -48,9 +48,9 @@ El proyecto tiene potencial para expandirse hacia otras enfermedades crónicas y
 
 Un sistema de predicción de diabetes ofrecerá:
 
-* **Prevención temprana:** Identificación proactiva de pacientes en riesgo de desarrollar la enfermedad.
-* **Optimización clínica:** Uso eficiente de tiempo y recursos médicos.
-* **Reducción de costos:** Menor gasto en el manejo de complicaciones avanzadas.
+* **Prevención Temprana:** Identificación proactiva de pacientes en riesgo de desarrollar la enfermedad.
+* **Optimización Clínica:** Uso eficiente de tiempo y recursos médicos.
+* **Reducción de Costos:** Menor gasto en el manejo de complicaciones avanzadas.
 
 ## Alcance del Proyecto
 
@@ -115,11 +115,11 @@ Es una metodología de ciencia de datos ágil e iterativa que se utiliza para of
 
 El ciclo de vida de TDSP consta de cinco etapas principales que se realizan de manera iterativa. Estas etapas son:
 
-* **Comprensión empresarial:** En esta atapa se busca especificar las variables clave que sirven como objetivos del modelo así como las métricas de los objetivos que determinan el éxito del proyecto.
-* **Adquisición y comprensión de datos:** En esta etapa se busca generar un conjunto de datos limpio y de alta calidad que se relacione claramente con las variables objetivo. 
+* **Comprensión Empresarial:** En esta atapa se busca especificar las variables clave que sirven como objetivos del modelo así como las métricas de los objetivos que determinan el éxito del proyecto.
+* **Adquisición y Comprensión de Datos:** En esta etapa se busca generar un conjunto de datos limpio y de alta calidad que se relacione claramente con las variables objetivo. 
 * **Modelado:** En esta etapa se busca crear un modelo de aprendizaje automático, con la mejor configuración de características (hiperparametros), capaz de predecir objetivo del proyecto con mayor precisión.
 * **Despliegue:** En esta etapa se busca implementar el modelo con una canalización de datos en un entorno de producción para la aceptación del cliente final
-* **Aceptación del cliente:** En esta etapa se busca finalizar los entregables del proyecto. Se debe confirmar que el proceso de desarrollo, el modelo y su implementación en un entorno de producción satisfacen los objetivos del cliente
+* **Aceptación del Cliente:** En esta etapa se busca finalizar los entregables del proyecto. Se debe confirmar que el proceso de desarrollo, el modelo y su implementación en un entorno de producción satisfacen los objetivos del cliente
  
 ## Cronograma
 
