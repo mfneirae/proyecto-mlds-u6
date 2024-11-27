@@ -6,43 +6,34 @@ Implementación Ágil de un Sistema de Machine Learning para la Predicción de D
 
 ## Objetivo del Proyecto
 
-Desarrollar e implementar un sistema de machine learning que permita predecir el riesgo de diabetes en pacientes a partir de datos médicos y demográficos, con el propósito de apoyar a profesionales de la salud en la toma de decisiones clínicas y la identificación temprana de casos de riesgo.
+Implementar un sistema de Machine Learning capaz de predecir si un paciente puede desarrollar diabetes a partir de datos médicos y demográficos, con el propósito de apoyar a profesionales de la salud en la toma de decisiones clínicas.
 
 ### Objetivos Específicos
 
-* **Análisis de Datos:** Explorar y procesar el dataset para entender las relaciones entre las variables disponibles (edad, género, IMC, hipertensión, etc.) y el estado de diabetes.
-* **Construcción del Modelo:** Entrenar y evaluar modelos de machine learning utilizando métricas de desempeño relevantes como precisión, sensibilidad y especificidad.
-* **Validación y Optimización:** Implementar técnicas de validación cruzada y ajustar hiperparámetros para maximizar el rendimiento del modelo.
-* **Despliegue del Sistema:** Crear un sistema accesible (por ejemplo, una API o una interfaz web) para que el modelo pueda ser utilizado por profesionales de la salud.
-* **Documentación y Capacitación:** Proveer documentación clara y realizar capacitaciones para garantizar la adopción efectiva del sistema.
+1. Explorar el conjunto de datos para entender las relaciones entre las variables disponibles (edad, género, IMC, hipertensión, etc.) y el estado de diabetes
+2. Entrenar modelos de clasificación utilizando diferentes técnicas de Machine Learning 
+3. Implementar técnicas de validación cruzada y ajuste de hiperparámetros para maximizar el rendimiento de los modelos.
+4. Evaluar los modelos entrenados utilizando métricas de desempeño 
 
-## Transfondo del Negocio
+## Trasfondo del Negocio
 
 ### Contexto
 
-La diabetes es una de las enfermedades crónicas más comunes, afectando a millones de personas a nivel global. Su diagnóstico tardío y falta de herramientas predictivas generan altos costos médicos y reducen la calidad de vida de los pacientes. Los sistemas de salud necesitan soluciones tecnológicas para identificar riesgos tempranos y prevenir complicaciones asociadas.
+La diabetes es una de las enfermedades crónicas más comunes, la cual afecta a millones de personas a nivel global. Su diagnóstico tardío genera altos costos médicos y, adicionalmente,  reduce la calidad de vida de los pacientes. Los sistemas de salud necesitan soluciones tecnológicas, capaces de apoyar el proceso de identificación temprana del desarrollo de esta enfermedad en los pacientes, con el fin de apoyar al profesional en la generación de un mejor diagnostico del paciente y así anticipar un posible deterioro en su salud del mismo al no detectar a tiempo dicha enfermedad.
 
 ### Problema
 
-1. **Diagnóstico tardío:** Frecuente detección en etapas avanzadas.
+1. **Diagnóstico Tardío:** Frecuente detección en etapas avanzadas.
 2. **Recursos limitados:** Insuficiente personal médico para análisis masivos.
 3. **Fragmentación de datos:** Falta de integración y análisis predictivo efectivo.
 
 ### Oportunidad
 
-El uso de machine learning permite construir sistemas predictivos que:
+El uso de Machine Learning permite construir sistemas predictivos que:
 
-* Ayudan a profesionales médicos a evaluar riesgos en grandes poblaciones.
-* Reducen costos asociados con complicaciones de diabetes.
-* Proveen herramientas escalables y accesibles para diversas instituciones.
-
-### Propuesta de Valor
-
-Un sistema de predicción de diabetes ofrecerá:
-
-* **Prevención temprana:** Identificación proactiva de casos en riesgo.
-* **Optimización clínica:** Uso eficiente de tiempo y recursos médicos.
-* **Reducción de costos:** Menor gasto en el manejo de complicaciones avanzadas.
+* Ayuden a profesionales médicos a evaluar riesgos en grandes poblaciones.
+* Reduzcan costos asociados con complicaciones de diabetes.
+* Provean herramientas escalables y accesibles para diversas instituciones.
 
 ### Mercado Objetivo
 
@@ -53,81 +44,106 @@ Un sistema de predicción de diabetes ofrecerá:
 
 El proyecto tiene potencial para expandirse hacia otras enfermedades crónicas y convertirse en un pilar en la medicina preventiva.
 
+### Propuesta de Valor
+
+Un sistema de predicción de diabetes ofrecerá:
+
+* **Prevención temprana:** Identificación proactiva de pacientes en riesgo de desarrollar la enfermedad.
+* **Optimización clínica:** Uso eficiente de tiempo y recursos médicos.
+* **Reducción de costos:** Menor gasto en el manejo de complicaciones avanzadas.
+
 ## Alcance del Proyecto
 
 ### Incluye
 
-1. **Variables del Dataset**:
-   * **Datos demográficos**:
-     * Edad
-     * Género
-   * **Factores de salud**:
-     * Índice de Masa Corporal (IMC)
-     * Niveles de glucosa en sangre
-     * Presión arterial
-   * **Historial clínico**:
-     * Enfermedades cardíacas
-     * Historial de tabaquismo
-   * **Etiqueta**:
-     * Presencia o ausencia de diabetes tipo 2.tabaquismo.
+1. **Variables del Conjunto de Datos**:
+  * **Datos Demográficos**:
+    * Edad
+    * Género
+  * **Factores de Salud**:
+    * Índice de Masa Corporal (IMC)
+    * Niveles de glucosa en sangre
+    * Nivel de HbA1c
+  * **Historial Clínico**:
+    * Hipertensión 
+    * Enfermedades cardíacas
+    * Historial de tabaquismo
+  * **Etiqueta**:
+    * Presencia o ausencia de diabetes.
+
 2. **Fases del Proyecto**:
-   * **Exploración de Datos**:
-     * Análisis de la distribución de variables.
-     * Identificación de correlaciones entre las variables y el riesgo de diabetes.
-   * **Preprocesamiento de Datos**:
-     * Manejo de valores nulos.
-     * Codificación de variables categóricas como género y tabaquismo.
-     * Normalización/estandarización de variables continuas (e.g., glucosa, IMC).
-   * **Construcción y Selección de Modelos**:
-     * Evaluación de algoritmos como:
-       * Regresión logística
-       * Random Forest
-     * Comparación de modelos mediante métricas clave:
-       * AUC-ROC
-       * F1-score
-       * Precisión
-   * **Validación**:
-     * División en conjuntos de entrenamiento y prueba.
+  * **Exploración de Datos**:
+    * Análisis exploratorio de los datos
+    * Análisis descriptivo de los datos
+    * Análisis de la distribución de variables.
+    * Identificación de correlaciones entre las variables.
+  * **Preprocesamiento de Datos**:
+    * Manejo de valores nulos
+    * Manejo de valores faltantes
+    * Codificación de variables categóricas.
+    * Normalización/estandarización de variables continuas
+  * **Construcción y Selección de Modelos**:
+    * Selección de algoritmos de Machine Learning
+    * Selección de hiperparametros para cada algoritmo
+    * División en conjuntos de entrenamiento y prueba. 
+  * **Validación**:
+    * Entrenamiento de los modelos
+    * Comparación de modelos mediante métricas de desempeño
+    * Evaluación de resultados
+    * Selección del modelo final     
 
 3. **Aplicaciones**:
-   * Identificación temprana del riesgo de diabetes en pacientes.
-   * Análisis del impacto de factores demográficos y clínicos en el desarrollo de diabetes.
-   * Uso como herramienta investigativa para profesionales médicos o educadores.
+  * Identificación temprana del riesgo de desarrollar diabetes en pacientes.
+  * Análisis del impacto de factores demográficos y clínicos en el desarrollo de diabetes.
+  * Uso como herramienta investigativa para profesionales médicos o educadores.
 
 ### Excluye
 
-* **Datos No Proporcionados por el Dataset:**
-  * Variables genéticas, datos familiares detallados o análisis de imágenes.
-* **Diagnóstico Clínico:**
-  * El sistema es una herramienta predictiva, no un sustituto del diagnóstico médico.
-* **Implementación Completa en Clínicas:**
-  * Integraciones con sistemas hospitalarios.
+* **Datos No Proporcionados en el Conjunto de Datos:**
+  * Variables genéticas.
+  * Datos familiares detallados .
+  * Análisis de imágenes.
+  * Análisis de exámenes médicos
+* **Diagnóstico Clínico:** El sistema es una herramienta predictiva, no un sustituto del diagnóstico médico.
+* **Implementación Completa en Clínicas:** Integraciones con sistemas hospitalarios.
 
 ## Metodología
 
-### #TODO
+### Team Data Science Process (TDSP)
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+Es una metodología de ciencia de datos ágil e iterativa que se utiliza para ofrecer soluciones de análisis predictivo y aplicaciones de IA de manera eficiente. Ofrece un ciclo de vida enfocado en estructurar el desarrollo de proyectos de ciencia de datos exploratorios y proyectos de análisis de datos.
 
+El ciclo de vida de TDSP consta de cinco etapas principales que se realizan de manera iterativa. Estas etapas son:
+
+* **Comprensión empresarial:** En esta atapa se busca especificar las variables clave que sirven como objetivos del modelo así como las métricas de los objetivos que determinan el éxito del proyecto.
+* **Adquisición y comprensión de datos:** En esta etapa se busca generar un conjunto de datos limpio y de alta calidad que se relacione claramente con las variables objetivo. 
+* **Modelado:** En esta etapa se busca crear un modelo de aprendizaje automático, con la mejor configuración de características (hiperparametros), capaz de predecir objetivo del proyecto con mayor precisión.
+* **Despliegue:** En esta etapa se busca implementar el modelo con una canalización de datos en un entorno de producción para la aceptación del cliente final
+* **Aceptación del cliente:** En esta etapa se busca finalizar los entregables del proyecto. Se debe confirmar que el proceso de desarrollo, el modelo y su implementación en un entorno de producción satisfacen los objetivos del cliente
+ 
 ## Cronograma
 
-### #TODO
-
-| Etapa | Duración Estimada | Fechas |
-|------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
-
-Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
+| Etapa | Actividades | Duración Estimada |
+| --- | --- | --- |
+| | Construir el algoritmo que permita realizar la carga de los datos | |
+| Entendimiento del negocio y carga de datos | Definir el marco del proyecto | Semana 18 - 24 Octubre |
+| | Crear un diccionario de datos | |
+| | Ejecutar un análisis exploratorio de los datos | |
+| Preprocesamiento, análisis exploratorio | Realizar el preprocesamiento del conjunto de datos | Semana 25 - 1 Noviembre |
+| | Definir el conjunto de datos final | |
+| | Generar un reporte con el resumen de los datos | |
+| | Realizar la extracción de características | |
+| Modelamiento y extracción de características | Diseñar los modelos de clasificación | Semana 2 - 8 Diciembre |
+| | Generar un reporte con la línea base de los modelos | |
+| | Seleccionar el modelo final | |
+| | Construir el algoritmo de despliegue | |
+| Despliegue | Generar la documentación de despliegue | Semana 9 - 15 Diciembre |
+| | Generar la documentación de la infraestructura | |
+| | Construir el algoritmo para la evaluación del modelo | |
+| Evaluación y entrega final | Realizar una interpretación de los resultados | Semana 16 – 22 Diciembre |
+| | Generar un reporte con las conclusiones del proyecto | |
 
 ## Equipo del Proyecto
 
-* [Jorge Luis Roncancio Turriago](mailto:jroncanciot@unal.edu.co)
-* [Manuel Fernando Neira Embus](mailto:mfneirae@unal.edu.co)
-
-## Presupuesto
-
-[Descripción del presupuesto asignado al proyecto]
+* [JORGE LUIS RONCANCIO TURRIAGO](mailto:jroncanciot@unal.edu.co)
+* [MANUEL FERNANDO NEIRA EMBUS](mailto:mfneirae@unal.edu.co)
