@@ -48,9 +48,10 @@ Esta distribuida de la siguiente manera:
 | Male | 39.964 | 41.6% |
 | Other | 18 | 0.01% |
 
+#### Graficas
 | **Histograma** | **Pie** |
 |---|---|
-| ![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/hist/hist_gender.jpg) | ![Pie_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/pie/pie_gender.jpg) |
+| ![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_gender.jpg) | ![Pie_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_gender.jpg) |
 
 ### Variable ‘age’
 Esta distribuida de la siguiente manera:
@@ -58,6 +59,11 @@ Esta distribuida de la siguiente manera:
 |---|---|---|
 | **Mínima** | 0.08 | 36 |
 | **Máxima** | 80.00 | 4.932 |
+
+#### Graficas
+| **Histograma** | **Pie** |
+|---|---|
+| ![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/hist/hist_age.jpg) | ![Pie_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/pie/pie_age.jpg) |
 
 ### Variable ‘hypertension’
 Esta distribuida de la siguiente manera:
