@@ -48,7 +48,9 @@ Esta distribuida de la siguiente manera:
 | Male | 39.964 | 41.6% |
 | Other | 18 | 0.01% |
 
-![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/hist/hist_gender.jpg)
+| **Histograma** | **Pie** |
+|---|---|
+| ![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/hist/hist_gender.jpg) | ![Pie_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/pie/pie_gender.jpg) |
 
 ### Variable ‘age’
 Esta distribuida de la siguiente manera:
