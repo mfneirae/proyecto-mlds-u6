@@ -2,7 +2,7 @@
 
 ## Resumen General de los Datos
 
-1. Cuenta con un total de 100.000 registros y cada uno corresponde a los datos médicos y demográficos de pacientes
+1. Cuenta con un total de 100.000 registros y cada uno corresponde a una serie de datos médicos y demográficos de un pacientes
 2. El conjunto de datos se encuentra en formato de valores separados por comas (CSV) y se transforma en un DataFrame de Pandas para su análisis
 3. Pesa 3.7MB y al cargarlo en el NoteBook ocupa un total de 6.9+MB en memoria
 4. El espacio utilizado en memoria por el DataFrame es de 17.31MB
@@ -23,14 +23,14 @@ La naturaleza de la variable sugiere ser una variable clave del conjunto de dato
 
 Esta variable tiene la siguiente distribución:
 
-- `**No (0):**` 91.5% de las observaciones.
-- `**Sí (1):**` 8.5% de las observaciones.
+- **`No (0):`** 91.5% de las observaciones.
+- **`Sí (1):`** 8.5% de las observaciones.
 
 ## Resumen de Calidad de los Datos
 
-- **Datos Faltantes:** No se encontraron datos faltantes en ninguna de las columnas del conjunto de datos como se puede evidenciar en este [archivo](…)
-- **Datos Duplicados:** Se encontraron 3.854 registros duplicados en el conjunto de datos por lo que se procedió a eliminarlos haciendo uso de la función “drop_duplicates” de Pandas. El proceso se puede evidenciar en este [archivo](…)
-- **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](…)
+- **Datos Faltantes:** No se encontraron datos faltantes en ninguna de las columnas del conjunto de datos como se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/missing_data.ipynb)
+- **Datos Duplicados:** Se encontraron 3.854 registros duplicados en el conjunto de datos por lo que se procedió a eliminarlos haciendo uso de la función “drop_duplicates” de Pandas. El proceso se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/duplicate_data.ipynb)
+- **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/atypical_data.ipynb)
 
 **Generalidades:**
 - Se identificaron 3.854 registros con valores duplicados y fueron eliminados.
@@ -47,6 +47,8 @@ Esta distribuida de la siguiente manera:
 | Female | 56.161 | 58.4% |
 | Male | 39.964 | 41.6% |
 | Other | 18 | 0.01% |
+
+![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/jorge-dev/scripts/preprocessing/graphics/hist/hist_gender.jpg)
 
 ### Variable ‘age’
 Esta distribuida de la siguiente manera:
@@ -111,13 +113,13 @@ Esta distribuida de la siguiente manera:
 ## Relación entre Variables Explicativas y Variable Objetivo
 
 1. En la matriz de correlación se pudo observar que existe una correlación lineal media entre algunas variables:
-- ‘age’ y ‘bmi’
-- ‘age’ y ‘diabetes’
-- ‘bmi’ y ‘diabetes’
-- ‘HbA1c_level’ y ‘diabetes’
-- ‘blood_glucose_level’ y ‘diabetes’
+    - ‘age’ y ‘bmi’
+    - ‘age’ y ‘diabetes’
+    - ‘bmi’ y ‘diabetes’
+    - ‘HbA1c_level’ y ‘diabetes’
+    - ‘blood_glucose_level’ y ‘diabetes’
 2. En la prueba de coeficiente de correlación de Spearman se evidencia que todas las variables están correlacionadas, arrojando en todas las pruebas, un p-valor de 0.000
 3. Al graficar los datos, se puede observar también la correlación existente entre todas las variables
 4. Se puede evidenciar que existe correlación lineal y no lineal entre las variables del conjunto de datos evidenciando una buena correlación con la variables objetivo
 
-**Nota:** Todo el análisis de correlación se puede evidenciar en el siguiente [archivo](…)
+**Nota:** Todo el análisis de correlación se puede evidenciar en el siguiente [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/relation_between_variables.ipynb)

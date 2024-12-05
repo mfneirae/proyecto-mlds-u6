@@ -24,8 +24,4 @@ Estos datos provienen originalmente de [Electronic Health Records (EHRs)](https:
 - **Fuente de recopilación:** [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset).
 - **Fuente de acceso:** [Firebase](https://firebasestorage.googleapis.com/v0/b/personalwp-8822c.appspot.com/o/diabetes_prediction_dataset.csv?alt=media&token=4d70d154-c3d0-4fa0-a3aa-9b9972dd3b95)
 
-El archivo disponible desde la fuente de acceso se encuentra en formato `.csv`, que es compatible con el módulo `pandas` para su análisis y manipulación.
-
-### Procedimientos de Transformación y Limpieza de los datos
-
-…
+El archivo disponible desde la fuente de acceso se encuentra en formato `.csv`, que es compatible con el módulo `Pandas` para su análisis y manipulación.
