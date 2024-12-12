@@ -14,8 +14,8 @@
 
 La variable "diabetes" es una variable categórica con dos posibles valores:
 
-- 0 
-- 1 
+- 0
+- 1
 
 Esta variable indica si un paciente tiene, o no, diabetes. Se considera esta variable como una variable objetivo, ya que refleja el resultado de interés en el análisis.
 
@@ -33,6 +33,7 @@ Esta variable tiene la siguiente distribución:
 - **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/atypical_data.ipynb)
 
 **Generalidades:**
+
 - Se identificaron 3.854 registros con valores duplicados y fueron eliminados.
 - Se identificaron 3 registro con valores atípicos y fueron eliminados.
 - Los datos eliminados representan el 3.9% de los registros del conjunto de datos; este porcentaje es mínimo y no afecta el análisis que se pretende realizar
@@ -41,56 +42,71 @@ Esta variable tiene la siguiente distribución:
 ## Variables Individuales
 
 ### Variable ‘gender’
+
 Esta distribuida de la siguiente manera:
+
 | **Valor** | **Cantidad** | **Porcentaje** |
 |---|---|---|
 | Female | 56.161 | 58.4% |
 | Male | 39.964 | 41.6% |
 | Other | 18 | 0.01% |
 
-#### Graficas
+#### Graficas ‘gender’
+
 | **Histograma** | **Pie** |
 |---|---|
 | ![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_gender.jpg) | ![Pie_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_gender.jpg) |
 
 ### Variable ‘age’
+
 Esta distribuida de la siguiente manera:
+
 | **Frecuencia** | **Valor** | **Cantidad** |
 |---|---|---|
 | **Mínima** | 0.08 | 36 |
 | **Máxima** | 80.00 | 4.932 |
 
-#### Grafica
+#### Grafica ‘age’
+
 | **Histograma** |
 |---|
 | ![Hist_Age](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_age.jpg) |
 
 ### Variable ‘hypertension’
+
 Esta distribuida de la siguiente manera:
+
 | **Valor** | **Cantidad** | **Porcentaje** |
 |---|---|---|
 | 0 | 88.682 | 92.2% |
 | 1 | 7.461 | 7.8% |
 
-#### Graficas
+#### Graficas ‘hypertension’
+
 | **Histograma** | **Pie** |
 |---|---|
 | ![Hist_Hypertension](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_hypertension.jpg) | ![Pie_Hypertension](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_hypertension.jpg) |
 
 ### Variable ‘heart_disease’
+
 Esta distribuida de la siguiente manera:
+
 | **Valor** | **Cantidad** | **Porcentaje** |
 |---|---|---|
 | 0 | 92.220 | 95.9% |
 | 1 | 3.923 | 4.1% |
 
-#### Graficas
+#### Graficas ‘heart_disease’
+
 | **Histograma** | **Pie** |
+
 |---|---|
 | ![Hist_Heart_disease](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_heart_disease.jpg) | ![Pie_Heart_disease](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_heart_disease.jpg) |
 
 ### Variable ‘smoking_history’
+
 Esta distribuida de la siguiente manera:
+
 | **Valor** | **Cantidad** | **Porcentaje** |
 |---|---|---|
 | never | 34.397 | 35.8% |
@@ -100,55 +116,68 @@ Esta distribuida de la siguiente manera:
 | not current | 6.367 | 6.6% |
 | ever | 3.998 | 4.2% |
 
-#### Graficas
+#### Graficas ‘smoking_history’
+
 | **Histograma** | **Pie** |
 |---|---|
 | ![Hist_Smoking_history](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_smoking_history.jpg) | ![Pie_Smoking_history](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_smoking_history.jpg) |
 
 ### Variable ‘bmi’
+
 Esta distribuida de la siguiente manera:
+
 | **Frecuencia** | **Valor** | **Cantidad** |
 |---|---|---|
 | **Mínima** | 88.76 | 1 |
 | **Máxima** | 27.32 | 21.666 |
 
-#### Grafica
+#### Grafica ‘bmi’
+
 | **Histograma** |
 |---|
 | ![Hist_Bmi](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_bmi.jpg) |
 
 ### Variable ‘HbA1c_level’
+
 Esta distribuida de la siguiente manera:
+
 | **Frecuencia** | **Valor** | **Cantidad** |
 |---|---|---|
 | **Mínimo** | 7.0 | 633 |
 | **Máximo** | 6.6 | 8.164 |
 
-#### Grafica
+#### Grafica ‘HbA1c_level’
+
 | **Histograma** |
 |---|
 | ![Hist_HbA1c_level](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_HbA1c_level.jpg) |
 
 ### Variable ‘blood_glucose_level’
+
 Esta distribuida de la siguiente manera:
+
 | **Frecuencia** | **Valor** | **Cantidad** |
 |---|---|---|
 | **Mínimo** | 220 | 600 |
 | **Máximo** | 159 | 7.478 |
 
-#### Grafica
+#### Grafica ‘blood_glucose_level’
+
 | **Histograma** |
 |---|
 | ![Hist_Blood_glucose_level](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_blood_glucose_level.jpg) |
 
 ### Variable ‘diabetes’
+
 Esta distribuida de la siguiente manera:
+
 | **Valor** | **Cantidad** | **Porcentaje** |
 |---|---|---|
 | 0 | 87.661 | 91.2% |
 | 1 | 8.482 | 8.8% |
 
-#### Graficas
+#### Graficas ‘diabetes’
+
 | **Histograma** | **Pie** |
 |---|---|
 | ![Hist_Diabetes](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_diabetes.jpg) | ![Pie_Diabetes](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_diabetes.jpg) |
