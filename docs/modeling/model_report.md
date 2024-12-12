@@ -45,7 +45,7 @@ El modelo seleccionado, correspondiente a XGBoost, es extremadamente preciso en 
 
 **Etiqueta 1** = **$VN / (VN + FP)$** = $1726 / (1726 + 14)$ ≈ **$0.992$**
 
-**Recall (Sensibilidad):**
+**Recall:**
 
 **Etiqueta 0** = **$VP / (VP + FP)$** = $26284 / (26284 + 14)$ ≈ **$0.999$**
 
@@ -53,9 +53,9 @@ El modelo seleccionado, correspondiente a XGBoost, es extremadamente preciso en 
 
 **F1-score:**
 
-**Etiqueta 0** = **$2 * (precision * recall) / (precision + recall)$** = $(0.969 * 0.999) / (0.969 + 0.999)$ ≈ 0.984$
+**Etiqueta 0** = **$2 * (precision * recall) / (precision + recall)$** = $(0.969 * 0.999) / (0.969 + 0.999)$ ≈ **$0.984$**
 
-**Etiqueta 1** = **$2 * (precision * recall) / (precision + recall)$** = $(0.992 * 0.678) / (0.992 * 0.678)$ ≈ 0.806$
+**Etiqueta 1** = **$2 * (precision * recall) / (precision + recall)$** = $(0.992 * 0.678) / (0.992 * 0.678)$ ≈ **$0.806$**
 
 ### Interpretación de las Métricas
 
