@@ -160,7 +160,7 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 ## Análisis de los resultados
 
-### F1 Score
+### Resultados F1 Score
 
 ![Descripción](/scripts/training/graphics/models_f1score.jpg)
 
@@ -168,7 +168,7 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 - **F1-score**: Es una métrica que combina precisión y recall en una sola medida, buscando un equilibrio entre ambas. Es útil cuando se busca un modelo que tenga un buen rendimiento tanto en precisión como en recall. Se obserbva un muy buen rendimiento para los modelos DT y XGB.
 
-### Accuracy
+### Resultados Accuracy
 
 ![Descripción](/scripts/training/graphics/models_accuracy.jpg)
 
@@ -176,15 +176,15 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 - **Accuracy**: Es la proporción de predicciones correctas (tanto positivas como negativas) entre el total de predicciones realizadas por el modelo. Es una métrica general que da una idea del rendimiento global del modelo. Todos los modelos, salvo MNN, tienen resultados buenos, se destacan DT y XGB.
 
-### Precision
+### Resultados Precision
 
-![Descripción](/scripts/training/graphics/models_Precision.jpg)
+![Descripción](/scripts/training/graphics/models_precision.jpg)
 
 #### Interpretación general Precision
 
 - **Precision**: Es la proporción de predicciones positivas correctas (VP) entre todas las predicciones positivas realizadas por el modelo (VP + FP). Indica la capacidad del modelo para evitar falsos positivos (predecir que algo es positivo cuando en realidad es negativo). Se destacan el rendimiento de DT y XGB que obtienen muy buenos resultados para las dos etiquetas.
 
-### Recall
+### Resultados Recall
 
 ![Descripción](/scripts/training/graphics/models_recall.jpg)
 
