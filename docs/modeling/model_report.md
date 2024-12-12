@@ -56,13 +56,10 @@ El modelo seleccionado, correspondiente a XGBoost, es extremadamente preciso en 
 
 ### Interpretación de las Métricas
 
-**Accuracy:** El modelo clasifico correctamente el 97.1% de las muestras.
-
-**Precision:** El modelo acierta un 96.9% de la veces a la hora de clasificar a pacientes sin diabetes (etiqueta 0) y un 99.2% para pacientes con diabetes (etiqueta 1).
-
-**Recall:** El modelo clasifico correctamente al 99.9% de los pacientes sin diabetes (etiqueta 0) y al 67.8% de los pacientes con diabetes (etiqueta 1).
-
-**F1-score:** El modelo tiene un balance del 98.4%, entre precisión y recall, para clasificar a pacientes sin diabetes (etiqueta 0) y 80.6% para clasificar a pacientes con diabetes (etiqueta 1). Esto nos indica que es un buen modelo.
+- **Accuracy:** El modelo clasifico correctamente el 97.1% de las muestras.
+- **Precision:** El modelo acierta un 96.9% de la veces a la hora de clasificar a pacientes sin diabetes (etiqueta 0) y un 99.2% para pacientes con diabetes (etiqueta 1).
+- **Recall:** El modelo clasifico correctamente al 99.9% de los pacientes sin diabetes (etiqueta 0) y al 67.8% de los pacientes con diabetes (etiqueta 1).
+- **F1-score:** El modelo tiene un balance del 98.4%, entre precisión y recall, para clasificar a pacientes sin diabetes (etiqueta 0) y 80.6% para clasificar a pacientes con diabetes (etiqueta 1). Esto nos indica que es un buen modelo.
 
 Con base en las métricas, el modelo tiene un buen desempeño general, especialmente en términos de `precision`, esto significa que el modelo es muy bueno para identificar correctamente a los pacientes que no tienen diabetes, sin embargo, el `recall` es relativamente bajo para la etiqueta 1, lo que indica que el modelo tiene un ligero sesgo para identificar a todos los pacientes que tienen diabetes.
 
