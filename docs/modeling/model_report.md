@@ -41,21 +41,18 @@ El modelo seleccionado, correspondiente a XGBoost, es extremadamente preciso en 
 
 **Precision:**
 
-**Etiqueta 0** = **$VP / (VP + FN)$** = $26284 / (26284 + 819)$ ≈ **$0.969$**
-
-**Etiqueta 1** = **$VN / (VN + FP)$** = $1726 / (1726 + 14)$ ≈ **$0.992$**
+- **Etiqueta 0** = **$VP / (VP + FN)$** = $26284 / (26284 + 819)$ ≈ **$0.969$**
+- **Etiqueta 1** = **$VN / (VN + FP)$** = $1726 / (1726 + 14)$ ≈ **$0.992$**
 
 **Recall:**
 
-**Etiqueta 0** = **$VP / (VP + FP)$** = $26284 / (26284 + 14)$ ≈ **$0.999$**
-
-**Etiqueta 1** = **$VN / (VN + FN)$** = $1726 / (1726 + 819)$ ≈ **$0.678$**
+- **Etiqueta 0** = **$VP / (VP + FP)$** = $26284 / (26284 + 14)$ ≈ **$0.999$**
+- **Etiqueta 1** = **$VN / (VN + FN)$** = $1726 / (1726 + 819)$ ≈ **$0.678$**
 
 **F1-score:**
 
-**Etiqueta 0** = **$2 * (precision * recall) / (precision + recall)$** = $(0.969 * 0.999) / (0.969 + 0.999)$ ≈ **$0.984$**
-
-**Etiqueta 1** = **$2 * (precision * recall) / (precision + recall)$** = $(0.992 * 0.678) / (0.992 * 0.678)$ ≈ **$0.806$**
+- **Etiqueta 0** = **$2 * (precision * recall) / (precision + recall)$** = $(0.969 * 0.999) / (0.969 + 0.999)$ ≈ **$0.984$**
+- **Etiqueta 1** = **$2 * (precision * recall) / (precision + recall)$** = $(0.992 * 0.678) / (0.992 * 0.678)$ ≈ **$0.806$**
 
 ### Interpretación de las Métricas
 
