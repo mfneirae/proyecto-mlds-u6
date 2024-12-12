@@ -123,23 +123,23 @@ El ciclo de vida de TDSP consta de cinco etapas principales que se realizan de m
  
 ## Cronograma
 
-| Etapa | Actividades | Duración Estimada |
+| **Etapa** | **Actividades** | **Duración Estimada** |
 | --- | --- | --- |
-| Entendimiento del negocio y carga de datos | Construir el algoritmo que permita realizar la carga de los datos | Semana 18 - 24 Noviembre |
+| **Entendimiento del negocio y carga de datos** | Construir el algoritmo que permita realizar la carga de los datos | **Semana 18 - 24 Noviembre** |
 | | Definir el marco del proyecto | |
 | | Crear un diccionario de datos | |
-| Preprocesamiento, análisis exploratorio | Ejecutar un análisis exploratorio de los datos | Semana 25 - 1 Noviembre |
+| **Preprocesamiento, análisis exploratorio** | Ejecutar un análisis exploratorio de los datos | **Semana 25 - 1 Noviembre** |
 | | Realizar el preprocesamiento del conjunto de datos | |
 | | Definir el conjunto de datos final | |
 | | Generar un reporte con el resumen de los datos | |
-| Modelamiento y extracción de características | Realizar la extracción de características | Semana 2 - 8 Diciembre |
+| **Modelamiento y extracción de características** | Realizar la extracción de características | **Semana 2 - 8 Diciembre** |
 | | Diseñar los modelos de clasificación | |
 | | Generar un reporte con la línea base de los modelos | |
 | | Seleccionar el modelo final | |
-| Despliegue | Construir el algoritmo de despliegue | Semana 9 - 15 Diciembre |
+| **Despliegue** | Construir el algoritmo de despliegue | **Semana 9 - 15 Diciembre** |
 | | Generar la documentación de despliegue | |
 | | Generar la documentación de la infraestructura | |
-| Evaluación y entrega final | Construir el algoritmo para la evaluación del modelo | Semana 16 – 22 Diciembre |
+| **Evaluación y entrega final** | Construir el algoritmo para la evaluación del modelo | **Semana 16 – 22 Diciembre** |
 | | Realizar una interpretación de los resultados | |
 | | Generar un reporte con las conclusiones del proyecto | |
 

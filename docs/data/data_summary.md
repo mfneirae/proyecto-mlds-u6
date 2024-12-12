@@ -28,9 +28,9 @@ Esta variable tiene la siguiente distribución:
 
 ## Resumen de Calidad de los Datos
 
-- **Datos Faltantes:** No se encontraron datos faltantes en ninguna de las columnas del conjunto de datos como se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/missing_data.ipynb)
-- **Datos Duplicados:** Se encontraron 3.854 registros duplicados en el conjunto de datos por lo que se procedió a eliminarlos haciendo uso de la función “drop_duplicates” de Pandas. El proceso se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/duplicate_data.ipynb)
-- **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/atypical_data.ipynb)
+- **Datos Faltantes:** No se encontraron datos faltantes en ninguna de las columnas del conjunto de datos como se puede evidenciar en este [archivo](/scripts/preprocessing/missing_data.ipynb)
+- **Datos Duplicados:** Se encontraron 3.854 registros duplicados en el conjunto de datos por lo que se procedió a eliminarlos haciendo uso de la función “drop_duplicates” de Pandas. El proceso se puede evidenciar en este [archivo](/scripts/preprocessing/duplicate_data.ipynb)
+- **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](/scripts/preprocessing/atypical_data.ipynb)
 
 **Generalidades:**
 
@@ -55,7 +55,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** | **Pie** |
 |---|---|
-| ![Hist_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_gender.jpg) | ![Pie_Gender](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_gender.jpg) |
+| ![Hist_Gender](/scripts/preprocessing/graphics/hist/hist_gender.jpg) | ![Pie_Gender](/scripts/preprocessing/graphics/pie/pie_gender.jpg) |
 
 ### Variable ‘age’
 
@@ -70,7 +70,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** |
 |---|
-| ![Hist_Age](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_age.jpg) |
+| ![Hist_Age](/scripts/preprocessing/graphics/hist/hist_age.jpg) |
 
 ### Variable ‘hypertension’
 
@@ -85,7 +85,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** | **Pie** |
 |---|---|
-| ![Hist_Hypertension](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_hypertension.jpg) | ![Pie_Hypertension](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_hypertension.jpg) |
+| ![Hist_Hypertension](/scripts/preprocessing/graphics/hist/hist_hypertension.jpg) | ![Pie_Hypertension](/scripts/preprocessing/graphics/pie/pie_hypertension.jpg) |
 
 ### Variable ‘heart_disease’
 
@@ -99,9 +99,8 @@ Esta distribuida de la siguiente manera:
 #### Graficas ‘heart_disease’
 
 | **Histograma** | **Pie** |
-
 |---|---|
-| ![Hist_Heart_disease](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_heart_disease.jpg) | ![Pie_Heart_disease](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_heart_disease.jpg) |
+| ![Hist_Heart_disease](/scripts/preprocessing/graphics/hist/hist_heart_disease.jpg) | ![Pie_Heart_disease](/scripts/preprocessing/graphics/pie/pie_heart_disease.jpg) |
 
 ### Variable ‘smoking_history’
 
@@ -120,7 +119,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** | **Pie** |
 |---|---|
-| ![Hist_Smoking_history](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_smoking_history.jpg) | ![Pie_Smoking_history](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_smoking_history.jpg) |
+| ![Hist_Smoking_history](/scripts/preprocessing/graphics/hist/hist_smoking_history.jpg) | ![Pie_Smoking_history](/scripts/preprocessing/graphics/pie/pie_smoking_history.jpg) |
 
 ### Variable ‘bmi’
 
@@ -135,7 +134,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** |
 |---|
-| ![Hist_Bmi](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_bmi.jpg) |
+| ![Hist_Bmi](/scripts/preprocessing/graphics/hist/hist_bmi.jpg) |
 
 ### Variable ‘HbA1c_level’
 
@@ -150,7 +149,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** |
 |---|
-| ![Hist_HbA1c_level](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_HbA1c_level.jpg) |
+| ![Hist_HbA1c_level](/scripts/preprocessing/graphics/hist/hist_HbA1c_level.jpg) |
 
 ### Variable ‘blood_glucose_level’
 
@@ -165,7 +164,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** |
 |---|
-| ![Hist_Blood_glucose_level](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_blood_glucose_level.jpg) |
+| ![Hist_Blood_glucose_level](/scripts/preprocessing/graphics/hist/hist_blood_glucose_level.jpg) |
 
 ### Variable ‘diabetes’
 
@@ -180,7 +179,7 @@ Esta distribuida de la siguiente manera:
 
 | **Histograma** | **Pie** |
 |---|---|
-| ![Hist_Diabetes](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/hist/hist_diabetes.jpg) | ![Pie_Diabetes](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/graphics/pie/pie_diabetes.jpg) |
+| ![Hist_Diabetes](/scripts/preprocessing/graphics/hist/hist_diabetes.jpg) | ![Pie_Diabetes](/scripts/preprocessing/graphics/pie/pie_diabetes.jpg) |
 
 ## Relación entre Variables Explicativas y Variable Objetivo
 
@@ -194,4 +193,4 @@ Esta distribuida de la siguiente manera:
 3. Al graficar los datos, se puede observar también la correlación existente entre todas las variables
 4. Se puede evidenciar que existe correlación lineal y no lineal entre las variables del conjunto de datos evidenciando una buena correlación con la variables objetivo
 
-**Nota:** Todo el análisis de correlación se puede evidenciar en el siguiente [archivo](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/preprocessing/relation_between_variables.ipynb)
+**Nota:** Todo el análisis de correlación se puede evidenciar en el siguiente [archivo](/scripts/preprocessing/relation_between_variables.ipynb)
