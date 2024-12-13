@@ -16,7 +16,7 @@ Estos datos provienen originalmente de [Electronic Health Records (EHRs)](https:
 
 - **Paso 1:** Se descargo el archivo `.csv` desde [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset)
 - **Paso 2:** Se cargo el [archivo](https://firebasestorage.googleapis.com/v0/b/personalwp-8822c.appspot.com/o/diabetes_prediction_dataset.csv?alt=media&token=4d70d154-c3d0-4fa0-a3aa-9b9972dd3b95) al `Storage Online` de `Firebase` siguiendo los pasos descritos en su [documentación](https://firebase.google.com/docs/storage/web/upload-files).
--  **Paso 3:** Se creo un [script](https://github.com/mfneirae/proyecto-mlds-u6/blob/master/scripts/data_acquisition/project_charter.ipynb) en el cual se descarga el archivo `.csv` desde `Firebase` (utilizando ‘wget’) y se transforma en un DataFrame de pandas, haciendo a su vez una validación de errores como: datos vacíos o problemas de conexión.
+-  **Paso 3:** Se creo un [script](/scripts/data_acquisition/project_charter.ipynb) en el cual se descarga el archivo `.csv` desde `Firebase` (utilizando ‘wget’) y se transforma en un DataFrame de pandas, haciendo a su vez una validación de errores como: datos vacíos o problemas de conexión.
 
 ## Rutas de Origen de Datos
 
