@@ -122,35 +122,35 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 #### **KNN (K-Nearest Neighbors)**
 
-![Confusion_Matrix_Knn](/scripts/training/graphics/confusion_matrix_knn.jpg)
+![Confusion_Matrix_Knn](/scripts/evaluation/graphics/confusion_matrix_knn.jpg)
 
 - **Rendimiento general:** El modelo muestra un buen rendimiento en la clasificación de pacientes con o sin diabetes, con una cantidad considerable de VN y VP.
 - **Falsos positivos y falsos negativos:** Se evidencian FP, lo que significa que a veces diagnostica diabetes cuando no la hay, sin embargo, la proporción es mínima por lo que no es demasiado preocupante. Se evidencian FN, lo que significa que puede pasar por alto algunos casos de diabetes; esta proporción si es elevada por lo que es importante tener en cuenta métricas como: `Precision`, ` Recall ` y ` F1-Score` a la hora de comparar con otros modelos. 
 
 #### **DT (Decision Tree)**
 
-![Confusion_Matrix_Dt](/scripts/training/graphics/confusion_matrix_dt.jpg)
+![Confusion_Matrix_Dt](/scripts/evaluation/graphics/confusion_matrix_dt.jpg)
 
 - **Rendimiento general:** El modelo es extremadamente preciso en la clasificación de pacientes con “no diabetes”, como lo demuestra el alto número de VP y la ausencia de FP.
 - **Falsos negativos:** Se evidencian FN, lo que significa que podría pasar por alto algunos casos de diabetes; esta proporción no es muy elevada, pero si representa una tercera parte de la muestra, por lo que es importante tener en cuenta métricas como: `Precision`, ` Recall ` y ` F1-Score` a la hora de comparar con otros modelos.
 
 #### **MNB (Multinomial Naive Bayes)**
 
-![Confusion_Matrix_Mnb](/scripts/training/graphics/confusion_matrix_mnb.jpg)
+![Confusion_Matrix_Mnb](/scripts/evaluation/graphics/confusion_matrix_mnb.jpg)
 
 - **Rendimiento general:** El modelo tiene poca cantidad de VN, lo que significa que falla en la clasificación de pacientes con diabetes. 
 - **Falsos positivos y falsos negativos:** Este modelo puede ser descartado debido a su alto número de FN, esto indica que es un modelo deficiente para la clasificación de pacientes con diabetes (objetivo del proyecto)
 
 #### **XGB (XGBoost)**
 
-![Confusion_Matrix_Xgb](/scripts/training/graphics/confusion_matrix_xgb.jpg)
+![Confusion_Matrix_Xgb](/scripts/evaluation/graphics/confusion_matrix_xgb.jpg)
 
 - **Rendimiento general:** El modelo muestra un buen rendimiento en la clasificación de pacientes con o sin diabetes, con una cantidad considerable de VN y VP, además de ser muy preciso en la clasificación de pacientes con “no diabetes”, como lo demuestra el alto número de VP y la muy baja cantidad de FP.
 - **Falsos positivos y falsos negativos:** Se evidencian FP, lo que significa que a veces diagnostica diabetes cuando no la hay, sin embargo, la proporción es mínima por lo que no es demasiado preocupante. Se evidencian FN, lo que significa que podría pasar por alto algunos casos de diabetes; esta proporción no es muy elevada, pero si representa una tercera parte de la muestra, por lo que es importante tener en cuenta métricas como: `Precision`, ` Recall ` y ` F1-Score` a la hora de comparar con otros modelos.
 
 #### **MNN (Multilayer Neural Network)**
 
-![Confusion_Matrix_Mnn](/scripts/training/graphics/confusion_matrix_mnn.jpg)
+![Confusion_Matrix_Mnn](/scripts/evaluation/graphics/confusion_matrix_mnn.jpg)
 
 - **Rendimiento general:** El modelo está completamente en la clasificación de pacientes con o sin diabetes. Clasifica a todas las personas como diabéticas, sin importar si realmente lo son.
 - **Falsos positivos:** Este modelo puede ser descartado debido a su alto número de FP, esto indica que diagnosticaría diabetes a muchos pacientes sanos. En la práctica, este modelo sería inútil para la detección de diabetes, ya que no puede distinguir entre personas con y sin la enfermedad.
@@ -159,7 +159,7 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 ### Resultados Accuracy
 
-![Models_Accuracy](/scripts/training/graphics/models_accuracy.jpg)
+![Models_Accuracy](/scripts/evaluation/graphics/models_accuracy.jpg)
 
 #### Interpretación
 
@@ -167,7 +167,7 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 ### Resultados Precision
 
-![Models_Precision](/scripts/training/graphics/models_precision.jpg)
+![Models_Precision](/scripts/evaluation/graphics/models_precision.jpg)
 
 #### Interpretación
 
@@ -175,7 +175,7 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 ### Resultados Recall
 
-![Models_Recall](/scripts/training/graphics/models_recall.jpg)
+![Models_Recall](/scripts/evaluation/graphics/models_recall.jpg)
 
 #### Interpretación general Recall
 
@@ -183,7 +183,7 @@ Busca un equilibrio entre ambas métricas. Útil cuando se necesita un modelo co
 
 ### Resultados F1-Score
 
-![Models_F1score](/scripts/training/graphics/models_f1score.jpg)
+![Models_F1score](/scripts/evaluation/graphics/models_f1score.jpg)
 
 #### Interpretación
 
