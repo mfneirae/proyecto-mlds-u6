@@ -17,7 +17,7 @@ Tomando los resultados de todos los modelos implementados, se optó por tomar co
 - **Descripción**: Es un algoritmo que realiza una implementación optimizada de otro algoritmo conocido como “Aumento de Gradiente”. Construye múltiples árboles de decisión en secuencia, minimizando el error de los modelos anteriores.
 - **Ventajas**: Alta precisión, manejo eficiente de datos desbalanceados y compatibilidad con datos heterogéneos.
 - **Desventajas**: Requiere un ajuste cuidadoso de hiperparámetros y puede ser computacionalmente intensivo.
-- **Fuente de información para el entrenamiento**: [Diabetes Prediction](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset)Corresponde a una colección de datos médicos y demográficos de pacientes, junto con su estado de diabetes (positivo o negativo)
+- **Fuente de información para el entrenamiento**: [Diabetes Prediction](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset) Corresponde a una colección de datos médicos y demográficos de pacientes, junto con su estado de diabetes (positivo o negativo)
 
 Se utilizo [Optuna](https://optuna.org/) para realizar una búsqueda de los mejores [hiperparámetros](/scripts/training/3_xgb_classifier_model.ipynb) obteniendo los siguientes resultados:
 
@@ -27,13 +27,13 @@ Se utilizo [Optuna](https://optuna.org/) para realizar una búsqueda de los mejo
 
 ## Evaluación del Modelo
 
-![Confusion_Matrix_Xgb](/scripts/training/graphics/confusion_matrix_xgb.jpg)
+![Confusion_Matrix_Xgb](/scripts/evaluation/graphics/confusion_matrix_xgb.jpg)
 
 El modelo seleccionado, correspondiente a XGBoost, es extremadamente preciso en la predicción de VP (pacientes sin diabetes), con una cantidad muy baja de FP (pacientes sanos clasificados con diabetes). Muestra a su vez un buen rendimiento en la predicción de VN (pacientes con diabetes) aunque se presenta una sesgo de casi una tercera parte de la muestra en los FN (pacientes diabéticos clasificados como sanos), no es muy elevada pero esto ocasiona que los resultados obtenidos no sean tan confiables en la detección de la diabetes utilizando el conjunto de datos suministrado, aspecto a considerar a la hora de implementar el modelo.
 
 ### Cálculo de Métricas
 
-![Xgb_Model_Metrics](/scripts/training/graphics/xgb_model_metrics.jpg)
+![Xgb_Model_Metrics](/scripts/evaluation/graphics/xgb_model_metrics.jpg)
 
 **Accuracy:**
 
