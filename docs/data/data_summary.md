@@ -28,9 +28,9 @@ Esta variable tiene la siguiente distribución:
 
 ## Resumen de Calidad de los Datos
 
-- **Datos Faltantes:** No se encontraron datos faltantes en ninguna de las columnas del conjunto de datos como se puede evidenciar en este [archivo](/scripts/preprocessing/missing_data.ipynb)
-- **Datos Duplicados:** Se encontraron 3.854 registros duplicados en el conjunto de datos por lo que se procedió a eliminarlos haciendo uso de la función “drop_duplicates” de Pandas. El proceso se puede evidenciar en este [archivo](/scripts/preprocessing/duplicate_data.ipynb)
-- **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](/scripts/preprocessing/atypical_data.ipynb)
+- **Datos Faltantes:** No se encontraron datos faltantes en ninguna de las columnas del conjunto de datos como se puede evidenciar en este [archivo](/scripts/preprocessing/2_missing_data.ipynb)
+- **Datos Duplicados:** Se encontraron 3.854 registros duplicados en el conjunto de datos por lo que se procedió a eliminarlos haciendo uso de la función “drop_duplicates” de Pandas. El proceso se puede evidenciar en este [archivo](/scripts/preprocessing/2_duplicate_data.ipynb)
+- **Datos Atipicos:** Se encontraron valores atípicos en las variables “bmi”, “HbA1c_level” y “blood_glucose_level”, sin embargo estos valores no se consideran errores de medición, sino que representan información válida pero excepcional, a pesar de esto, es importante eliminar del conjunto de datos los casos más extremos que pueden generar un sesgo en el análisis, por lo cual se procede a utilizar el criterio del Rango Intercuartílico (IQR) para seleccionar los outliers más extremos. Con esta técnica se encontraron solo 3 registros con outliers extremos en la columna “bmi” los cuales fueron eliminados. El proceso se puede evidenciar en este [archivo](/scripts/preprocessing/2_atypical_data.ipynb)
 
 **Generalidades:**
 
@@ -193,4 +193,4 @@ Esta distribuida de la siguiente manera:
 3. Al graficar los datos, se puede observar también la correlación existente entre todas las variables
 4. Se puede evidenciar que existe correlación lineal y no lineal entre las variables del conjunto de datos evidenciando una buena correlación con la variables objetivo
 
-**Nota:** Todo el análisis de correlación se puede evidenciar en el siguiente [archivo](/scripts/preprocessing/relation_between_variables.ipynb)
+**Nota:** Todo el análisis de correlación se puede evidenciar en el siguiente [archivo](/scripts/preprocessing/2_relation_between_variables.ipynb)

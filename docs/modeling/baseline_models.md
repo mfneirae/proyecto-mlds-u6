@@ -47,7 +47,7 @@ Las variables de entrada para todos lo modelos son las siguientes:
 - HbA1c_level
 - blood_glucose_level
 
-**Nota:** Su descripción, tipo de dato y posibles alores se puede encontrar en el siguiente [archivo](/docs/data/data_dictionary.md)
+**Nota:** Su descripción, tipo de dato y posibles valores se puede encontrar en el siguiente [archivo](/docs/data/data_dictionary.md)
 
 ### Hiperparámetros
 
