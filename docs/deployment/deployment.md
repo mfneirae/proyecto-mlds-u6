@@ -15,6 +15,7 @@
   - **Fastapi:** $0.115.6$
 - **Requisitos de Seguridad:** Se espera que solo tengan acceso al API las personas pertenecientes al directorio activo de los hospitales y/o clínicas donde se implemente la solución, por ende, se espera que el sistema cuente con un servicio de autenticación previo al consumo del modelo, el cual este conectado a dicho directorio activo para proteger el acceso al modelo; a su vez, la solución se implementa para será accedida únicamente por protocolo HTTPS.
 - **Diagrama de Arquitectura:** 
+
 ![Api_Architecture](/scripts/evaluation/graphics/api_architecture.png)
 
 ## Código de Despliegue
