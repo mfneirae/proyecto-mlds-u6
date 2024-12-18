@@ -2,17 +2,51 @@
 
 ## Infraestructura
 
-- **Nombre del modelo:** (nombre que se le ha dado al modelo)
-- **Plataforma de despliegue:** (plataforma donde se va a desplegar el modelo)
-- **Requisitos técnicos:** (lista de requisitos técnicos necesarios para el despliegue, como versión de Python, bibliotecas de terceros, hardware, etc.)
-- **Requisitos de seguridad:** (lista de requisitos de seguridad necesarios para el despliegue, como autenticación, encriptación de datos, etc.)
+- **Nombre del modelo:**
+  
+  DiaBoost
+
+- **Plataforma de despliegue:**
+
+    MLFlow + NGROK (local)
+
+- **Requisitos técnicos:**
+
+  - Python versión: 3.8 o superior
+  
+  **Bibliotecas de terceros:**
+  - xgboost
+  - mlflow
+  - pandas
+  - numpy
+  - flask (para la API opcional)
+  - pyngrok (para exponer localmente)
+
+- **Requisitos de seguridad:**
+
+  - Usar un token de acceso seguro para NGROK.
+  - No exponer información confidencial en los logs.
+
 - **Diagrama de arquitectura:** (imagen que muestra la arquitectura del sistema que se utilizará para desplegar el modelo)
 
 ## Código de despliegue
 
-- **Archivo principal:** (nombre del archivo principal que contiene el código de despliegue)
-- **Rutas de acceso a los archivos:** (lista de rutas de acceso a los archivos necesarios para el despliegue)
-- **Variables de entorno:** (lista de variables de entorno necesarias para el despliegue)
+- **Archivo principal:**
+
+``` os
+  scripts/deployment/main.py
+```
+
+- **Rutas de acceso a los archivos:**
+
+``` os
+  scripts/deployment/
+```
+
+- **Variables de entorno:**
+  - **NGROK_AUTH_TOKEN:** Tu token de NGROK para exponer la URL pública.
+  - **MLFLOW_TRACKING_URI:** La URI de la instancia de MLFlow.
+  - **PORT:** El puerto en el que se ejecutará la API localmente.
 
 ## Documentación del despliegue
 
