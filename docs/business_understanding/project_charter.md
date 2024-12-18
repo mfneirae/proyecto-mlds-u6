@@ -65,7 +65,7 @@ Un sistema de predicción de diabetes ofrecerá:
     * Niveles de glucosa en sangre
     * Nivel de HbA1c
   * **Historial Clínico**:
-    * Hipertensión 
+    * Hipertensión
     * Enfermedades cardíacas
     * Historial de tabaquismo
   * **Etiqueta**:
