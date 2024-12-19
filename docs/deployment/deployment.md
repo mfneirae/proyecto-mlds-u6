@@ -37,14 +37,14 @@
 
     Crear un [script](https://github.com/jroncanciot/diabetes/blob/master/main.py) (`main.py`) con las siguientes consideraciones para construir el API:
       
-      - 1 Definir el `request` (clase de entrada) y el `response` (clase de salida) del API
-      - 2 Cargar el modelo entrenado haciendo uso de `joblib`
-      - 3 Definir un endpoint de tipo `post` para consumir el API
-      - 4 Construir una función asíncrona para el endpoint, encargada de recibir la petición del usuario (`request`) y retornar la predicción del modelo (`response`)
+      - **1:** Definir el `request` (clase de entrada) y el `response` (clase de salida) del API
+      - **2:** Cargar el modelo entrenado haciendo uso de `joblib`
+      - **3:** Definir un endpoint de tipo `post` para consumir el API
+      - **4:** Construir una función asíncrona para el endpoint, encargada de recibir la petición del usuario (`request`) y retornar la predicción del modelo (`response`)
 
   **Configuración Railway:**
 
-    - 1 Crear un [archivo](https://github.com/jroncanciot/diabetes/blob/master/railway.json) (`railway.json`) con la configuración básica para la construcción y despliegue del servicio de alojamiento web del API
+    - **1:** Crear un [archivo](https://github.com/jroncanciot/diabetes/blob/master/railway.json) (`railway.json`) con la configuración básica para la construcción y despliegue del servicio de alojamiento web del API
     - 2 Crear un [archivo](https://github.com/jroncanciot/diabetes/blob/master/requirements.txt) (requirements.txt) que contenga los dependencias necesarias para el funcionamiento del API; dependencias que serán instaladas en el servicio de alojamiento web.
 
   **Despliegue:**
