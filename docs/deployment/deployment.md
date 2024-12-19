@@ -33,14 +33,11 @@
 
 - **Instrucciones de Configuración:** 
 
-  **Configuración FastAPI:**
-
-    Crear un [script](https://github.com/jroncanciot/diabetes/blob/master/main.py) (`main.py`) con las siguientes consideraciones para construir el API:
-      
-      - **1:** Definir el `request` (clase de entrada) y el `response` (clase de salida) del API
-      - **2:** Cargar el modelo entrenado haciendo uso de `joblib`
-      - **3:** Definir un endpoint de tipo `post` para consumir el API
-      - **4:** Construir una función asíncrona para el endpoint, encargada de recibir la petición del usuario (`request`) y retornar la predicción del modelo (`response`)
+  **Configuración FastAPI:** Crear un [script](https://github.com/jroncanciot/diabetes/blob/master/main.py) (`main.py`) con las siguientes consideraciones para construir el API:
+    - **1:** Definir el `request` (clase de entrada) y el `response` (clase de salida) del API
+    - **2:** Cargar el modelo entrenado haciendo uso de `joblib`
+    - **3:** Definir un endpoint de tipo `post` para consumir el API
+    - **4:** Construir una función asíncrona para el endpoint, encargada de recibir la petición del usuario (`request`) y retornar la predicción del modelo (`response`)
 
   **Configuración Railway:**
 
