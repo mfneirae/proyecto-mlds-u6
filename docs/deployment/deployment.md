@@ -36,10 +36,11 @@
   **Configuración FastAPI:**
 
     Crear un [script](https://github.com/jroncanciot/diabetes/blob/master/main.py) (`main.py`) con las siguientes consideraciones para construir el API:
-      - 1. Definir el `request` (clase de entrada) y el `response` (clase de salida) del API
-      - 2. Cargar el modelo entrenado haciendo uso de `joblib`
-      - 3. Definir un endpoint de tipo `post` para consumir el API
-      - 4. Construir una función asíncrona para el endpoint, encargada de recibir la petición del usuario (`request`) y retornar la predicción del modelo (`response`)
+      
+      * 1. Definir el `request` (clase de entrada) y el `response` (clase de salida) del API
+      * 2. Cargar el modelo entrenado haciendo uso de `joblib`
+      * 3. Definir un endpoint de tipo `post` para consumir el API
+      * 4. Construir una función asíncrona para el endpoint, encargada de recibir la petición del usuario (`request`) y retornar la predicción del modelo (`response`)
 
   **Configuración Railway:**
 
@@ -55,10 +56,10 @@
     - 5. Generar un dominio para consumir el API en la opción **”Generate Domain”** que se encuentra dentro de la configuración del API desplegada
 - **Instrucciones de Uso:**
   Enviar una petición al dominio que fue asignado al API con los siguientes argumentos:
-    - 1. **“Método:”** `post`
-    - 2. **Url:** `https://diabetes-production-2036.up.railway.app`
-    - 3. **Endpoint:** `diabetes_prediction`
-    - 4. **Request:** `{"features": […, …, …, …, …, …, …, …]}`
+    - **“Método:”** `post`
+    - **Url:** `https://diabetes-production-2036.up.railway.app`
+    - **Endpoint:** `diabetes_prediction`
+    - **Request:** `{"features": […, …, …, …, …, …, …, …]}`
 
   **cURL de ejemplo:**
 
