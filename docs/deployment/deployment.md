@@ -42,7 +42,7 @@
   **Configuración Railway:**
 
     - **1:** Crear un [archivo](https://github.com/jroncanciot/diabetes/blob/master/railway.json) (`railway.json`) con la configuración básica para la construcción y despliegue del servicio de alojamiento web del API
-    - **2:** Crear un [archivo](https://github.com/jroncanciot/diabetes/blob/master/requirements.txt) (requirements.txt) que contenga los dependencias necesarias para el funcionamiento del API; dependencias que serán instaladas en el servicio de alojamiento web.
+    - **2:** Crear un [archivo](https://github.com/jroncanciot/diabetes/blob/master/requirements.txt) (`requirements.txt`) que contenga los dependencias necesarias para el funcionamiento del API; dependencias que serán instaladas en el servicio de alojamiento web.
 
   **Despliegue:**
 
