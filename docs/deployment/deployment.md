@@ -53,7 +53,7 @@
     - **5:** Generar un dominio para consumir el API en la opción **”Generate Domain”** que se encuentra dentro de la configuración del API desplegada
 - **Instrucciones de Uso:**
   Enviar una petición al dominio que fue asignado al API con los siguientes argumentos:
-    - **“Método:”** `post`
+    - **Método:** `post`
     - **Url:** `https://diabetes-production-2036.up.railway.app`
     - **Endpoint:** `diabetes_prediction`
     - **Request:** `{"features": […, …, …, …, …, …, …, …]}`
