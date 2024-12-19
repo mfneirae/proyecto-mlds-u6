@@ -54,58 +54,42 @@ Un sistema de predicción de diabetes ofrecerá:
 
 ## Alcance del Proyecto
 
-### Incluye
+### Solución
 
-* **Variables del Conjunto de Datos**:
-  * **Datos Demográficos**:
-    * Edad
-    * Género
-  * **Factores de Salud**:
-    * Índice de Masa Corporal (IMC)
-    * Niveles de glucosa en sangre
-    * Nivel de HbA1c
-  * **Historial Clínico**:
-    * Hipertensión 
-    * Enfermedades cardíacas
-    * Historial de tabaquismo
-  * **Etiqueta**:
-    * Presencia o ausencia de diabetes.
+Se busca implementar una solución basada en Machine Learning o Deep Learning que permita determinar si un paciente puede desarrollar diabetes a partir de datos médicos y demográficos. Para ellos se entrenarán varios modelos de clasificación utilizando el conjunto de datos “Diabetes Prediction Dataset”.
 
-* **Fases del Proyecto**:
-  * **Exploración de Datos**:
-    * Análisis exploratorio de los datos
-    * Análisis descriptivo de los datos
-    * Análisis de la distribución de variables.
-    * Identificación de correlaciones entre las variables.
-  * **Preprocesamiento de Datos**:
-    * Manejo de valores nulos
-    * Manejo de valores faltantes
-    * Codificación de variables categóricas.
-    * Normalización/estandarización de variables continuas
-  * **Construcción y Selección de Modelos**:
-    * Selección de algoritmos de Machine Learning
-    * Selección de hiperparametros para cada algoritmo
-    * División en conjuntos de entrenamiento y prueba.
-  * **Validación**:
-    * Entrenamiento de los modelos
-    * Comparación de modelos mediante métricas de desempeño
-    * Evaluación de resultados
-    * Selección del modelo final
+### Limites y Fronteras
 
-* **Aplicaciones**:
+El proyecto se alimenta única y exclusivamente de datos reales provenientes de [Electronic Health Records (EHRs)](https://www.cms.gov/priorities/key-initiatives/e-health/records). Esta data es frecuentemente actualizada, sin embargo, el conjunto de datos a trabajar contiene únicamente registros de pacientes hasta el año 2022.
+
+El conjunto de datos está compuesto por 9 atributos, de los cuales destaca uno de suma importancia: “diabetes”; este atributo se hace relevante ya que indica si un paciente tiene, o no, diabetes y en esto se centra la solución del proyecto ya que se busca determinar si un paciente puede desarrollar diabetes a partir de datos médicos y demográficos
+
+No se espera incluir dentro del desarrollo del proyecto, datos no proporcionados dentro del conjunto de datos inicial como:
+
+* Variables genéticas.
+* Datos familiares detallados .
+* Análisis de imágenes.
+* Análisis de exámenes médicos
+
+### Aspectos Específicos del Negocio
+
+El enfoque principal del proyecto es seleccionar un modelo adecuado, por lo cual se espera probar diferentes modelos, con sus mejores hiperparametros, para seleccionar el que mejor resultado le brinde al usuario.
+
+El sistema que se pretende implementar consta de una herramienta predictiva, no un sustituto del diagnóstico médico.
+
+### Resultados Esperados
+
+Los beneficiarios del proyecto podrán utilizar el producto del proyecto de la siguiente manera:
+
+1. Identificar los hiperparámetros necesarios para realizar los entrenamientos de los modelos.
+2. Evaluar el desempeño del modelo con métricas de desempeño.
+3. Realizar un análisis minucioso de los resultados obtenidos para seleccionar el modelo más adecuado
+4. La información proporcionada por el modelo podrá ser utilizada para apoyar a profesionales de la salud en la toma de decisiones clínicas.
+
+### Aplicaciones
   * Identificación temprana del riesgo de desarrollar diabetes en pacientes.
   * Análisis del impacto de factores demográficos y clínicos en el desarrollo de diabetes.
   * Uso como herramienta investigativa para profesionales médicos o educadores.
-
-### Excluye
-
-* **Datos No Proporcionados en el Conjunto de Datos:**
-  * Variables genéticas.
-  * Datos familiares detallados .
-  * Análisis de imágenes.
-  * Análisis de exámenes médicos
-* **Diagnóstico Clínico:** El sistema es una herramienta predictiva, no un sustituto del diagnóstico médico.
-* **Implementación Completa en Clínicas:** Integraciones con sistemas hospitalarios.
 
 ## Metodología
 
